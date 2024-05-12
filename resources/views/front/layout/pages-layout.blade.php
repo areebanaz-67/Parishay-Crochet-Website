@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parishay Crochet Collection</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/front/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
@@ -51,7 +51,9 @@
         <div class="box1 box">
             <div class="box-content">
                 <h2>Jewelry</h2>
-                <div class="box-img" style="background-image: url('jewelry.jpeg')">
+                <div class="box-img" style="background-image: url('front/images/jewelry.jpeg')">
+                <!-- <div class="box-img" style="background-image: url('{{ asset('front/images/jewelery.jpg') }}')"></div> -->
+
                 </div>
                 <a href="jewelry.html">See more</a>
     
@@ -180,6 +182,6 @@
         </div>
 
     </footer>
-    <script src="script.js" ></script>
+    <script src="/front/script.js" ></script>
 </body>
 </html>
