@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault();
     
     // Navigate to the home page
-    window.location.href = 'index.html';
+    window.location.href = 'index.blade.php';
   });
 
 });

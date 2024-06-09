@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parishay Crochet Collection</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{asset('front/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
@@ -13,7 +14,7 @@
         <div class="navbar" id="navbar1">
             <div class="nav-logo border">
                 <a href="index.html" class="logo">
-                    <img src="pc-monogram-logo-vector-33144481-removebg-preview.png" style="height: 75px; width: 100%;background-size:contain; background-repeat: no-repeat;">
+                    <img src="{{asset('front/images/pc-monogram-logo-vector-33144481-removebg-preview.png')}}" style="height: 75px; width: 100%;background-size:contain; background-repeat: no-repeat;">
                 </a>
             </div>
             <div class="brandname">
@@ -22,7 +23,7 @@
             <a href="#product" class="nav-options">Categories</a>
             <a href="Search.html" class="nav-options">Search</a>
             <a href="Cart.html" class="nav-options" ">Cart</a>
-            <a href="About.html" class="nav-options">About</a>
+            <a href="#" class="nav-options">About</a>
             <a href="Signup.html" class="nav-options">Sign up</a>
             <a href="reterive.html" class="nav-options">Reterive Data</a>
             <a href="login.html" class="nav-options">Login</a> 
@@ -51,8 +52,11 @@
         <div class="box1 box">
             <div class="box-content">
                 <h2>Jewelry</h2>
-                <div class="box-img" style="background-image: url('jewelry.jpeg')">
-                </div>
+                <!-- <div class="box-img" style="background-image: url('{{ asset('front/images/logo.png') }}')"> </div> -->
+                    <!-- <div class="box-img" style = "background-image: url('front/images/logo.png')"></div> -->
+                    <!-- <div class="box-img" style="background-image: url('{{ asset('/front/images/decor.png') }}')"> </div> -->
+                    <div class="box-img" style="background-image: url('{{ asset('front/images/logo.png') }}')">
+                 </div>
                 <a href="jewelry.html">See more</a>
     
             </div>
@@ -180,6 +184,6 @@
         </div>
 
     </footer>
-    <script src="script.js" ></script>
+    <script src="{{ asset('script.js')}}" ></script>
 </body>
 </html>

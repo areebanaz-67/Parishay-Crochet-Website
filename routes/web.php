@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontEndController;
@@ -18,6 +19,13 @@ use App\Http\Controllers\FrontEndController;
 Route::get('/', function () {
     return view('index');
 });
+
+// 
+
+Route::get('/About', [AboutController::class, 'index'])->name('About');
+Route::get('/About', function () {
+    return view('About');
+})->name('About');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
